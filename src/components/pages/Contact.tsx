@@ -4,7 +4,7 @@ import { faEnvelope, faPhone, faMapMarker, faClock, faPaperPlane } from '@fortaw
 
 const contactInfo = [
   { icon: faEnvelope, title: 'Email', details: 'support@bitmonie.com', link: 'mailto:support@bitmonie.com' },
-  { icon: faPhone, title: 'Phone', details: '+1 (555) 123-4567', link: 'tel:+15551234567' },
+  { icon: faPhone, title: 'Phone', details: '+234 0 123-4567', link: 'tel:+23401234567' },
   { icon: faMapMarker, title: 'Office', details: '123 Crypto Street, Silicon Valley, CA 94025', link: '#' },
   { icon: faClock, title: 'Support Hours', details: '24/7 Customer Support', link: '#' },
 ];
