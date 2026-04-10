@@ -29,7 +29,7 @@ export default function Hero() {
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary rounded-full mb-6">
               <span className="w-2 h-2 bg-tertiary rounded-full animate-pulse" />
-              <span className="text-sm text-text-color font-medium">Trusted by 500K+ users</span>
+              {/* <span className="text-sm text-text-color font-medium">Trusted by 500K+ users</span> */}
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-color leading-tight mb-6">

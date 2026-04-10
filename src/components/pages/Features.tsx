@@ -3,12 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWallet, faPaperPlane, faShieldAlt, faCreditCard, faChartLine, faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 const features = [
-  { icon: faWallet, title: 'Multi-currency wallet', description: 'Hold, send and receive in 40+ currencies including NGN, USD, GBP, EUR and more with real-time exchange rates.' },
+  { icon: faWallet, title: 'Multi-currency wallet', description: 'Hold, send and receive money from currencies including NGN and USD. ' },
   { icon: faPaperPlane, title: 'Instant transfers', description: 'Send money globally in seconds. No delays, no hidden fees. Your recipient gets it instantly, anywhere in the world.' },
   { icon: faShieldAlt, title: 'Bank-grade security', description: 'Your funds are protected with 256-bit encryption, biometric authentication, and real-time fraud detection.' },
-  { icon: faCreditCard, title: 'Virtual cards', description: 'Create virtual debit cards for online shopping in seconds. Set spending limits and freeze instantly when needed.' },
   { icon: faChartLine, title: 'Spending analytics', description: 'Track your spending habits with beautiful charts and insights. Know exactly where your money goes every month.' },
-  { icon: faGlobe, title: '150+ countries', description: 'Available across Africa, Europe, North America and Asia. Borderless banking that truly works everywhere you are.' },
+ { icon: faGlobe, title: 'Growing Nationwide', description: 'Starting strong in Port Harcourt, Abuja and Lagos, with plans to reach every Nigerian no matter where they are.' },
 ];
 
 export default function Features() {

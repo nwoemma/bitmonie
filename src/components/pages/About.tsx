@@ -3,17 +3,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUsers, faGlobe, faRocket, faHeart } from '@fortawesome/free-solid-svg-icons';
 
 const values = [
-  { icon: faUsers, title: 'Community Driven', description: 'Built by traders, for the trading community' },
+  { icon: faUsers, title: 'Community Driven', description: 'Built for the trading community' },
   { icon: faGlobe, title: 'Global Access', description: 'Borderless banking that works everywhere you are' },
   { icon: faRocket, title: 'Innovation Focus', description: 'Constantly pushing the boundaries of DeFi analytics' },
   { icon: faHeart, title: 'User Centric', description: 'Your success is our mission' },
 ];
 
 const milestones = [
-  { year: '2021', title: 'Founded', description: 'Crypto Mart started with a mission to bring transparency to DeFi' },
-  { year: '2022', title: 'V1 Launch', description: 'First version of our platform goes live' },
-  { year: '2023', title: '1M Users', description: 'Reached over 1 million active traders worldwide' },
-  { year: '2024', title: 'Global Expansion', description: 'Launched in 150+ countries' },
+  { title: 'Founded', description: 'Bitmonie is founded in Nigeria with a mission to simplify money management for Nigerians' },
+  { title: 'Beta Launch', description: 'Beta version will soon be tested by early users across Abuja and Port Harcourt' },
+  { title: 'Public Launch', description: 'Full public launch rolling out soon nationwide for all Nigerians' },
+  { title: 'The Future', description: 'Plans to support all 36 states with NGN and USD wallet support' },
 ];
 
 export default function About() {
@@ -57,8 +57,7 @@ export default function About() {
         <div className="mb-16 opacity-0 animate-fade-up">
           <div className="bg-secondary/50 border border-primary/20 rounded-2xl p-8 text-center max-w-3xl mx-auto">
             <p className="text-text-color/80 leading-relaxed text-lg">
-              Bitmonie is a revolutionary financial platform that combines the best of traditional banking with the innovation of decentralized finance. 
-              Send, receive, and manage your money across borders instantly with zero hidden fees. 
+              Bitmonie is a new revolutionary financial platform that combines the best of traditional banking with the innovation of decentralized finance.
               Our multi-currency wallet, virtual cards, and spending analytics give you complete control over your finances.
             </p>
           </div>
@@ -88,7 +87,6 @@ export default function About() {
               ref={el => { milestonesRef.current[index] = el; }}
               className="relative opacity-0"
             >
-              <div className="text-3xl font-black text-text-primary mb-2">{milestone.year}</div>
               <div className="font-bold text-text-color mb-1">{milestone.title}</div>
               <p className="text-sm text-text-color/70">{milestone.description}</p>
               {index < milestones.length - 1 && (
