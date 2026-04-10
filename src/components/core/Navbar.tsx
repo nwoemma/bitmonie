@@ -23,7 +23,7 @@ export default function Navbar() {
           <img 
             src={logo}
             alt="Bitmonie" 
-            className="h-10 w-auto" 
+            className="h-15 w-auto" 
           />
         </Link>
         {/* Desktop Links */}
@@ -44,7 +44,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Buttons */}
-        <div className="hidden md:flex items-center gap-3">
+        {/* <div className="hidden md:flex items-center gap-3">
           <Link to="/signin">
             <button className="px-5 py-2 text-sm font-semibold text-tertiary border-2 border-tertiary rounded-xl hover:bg-tertiary hover:text-secondary transition-all">
               Sign in
@@ -55,7 +55,7 @@ export default function Navbar() {
               Get Started <FiArrowRight className="w-3 h-3" />
             </button>
           </Link>
-        </div>
+        </div> */}
 
         {/* Mobile Menu Toggle */}
         <button
@@ -83,16 +83,16 @@ export default function Navbar() {
               {item.label}
             </Link>
           ))}
-          <Link to="/signin" onClick={() => setIsMenuOpen(false)}>
+          {/* <Link to="/signin" onClick={() => setIsMenuOpen(false)}>
             <button className="w-full py-2.5 border-2 border-tertiary rounded-xl text-sm font-semibold text-tertiary hover:bg-tertiary hover:text-secondary transition-all">
               Sign in
             </button>
-          </Link>
-          <Link to="/signup" onClick={() => setIsMenuOpen(false)}>
+          </Link> */}
+          {/* <Link to="/signup" onClick={() => setIsMenuOpen(false)}>
             <button className="w-full py-2.5 bg-primary text-tertiary rounded-xl text-sm font-semibold hover:bg-tertiary hover:text-primary transition-all">
               Get Started
             </button>
-          </Link>
+          </Link> */}
         </div>
       )}
     </nav>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilm, faMugHot, faMoneyBillWave, faCreditCard } from '@fortawesome/free-solid-svg-icons';
 import { FaArrowRight, FaChartLine, FaShieldAlt, FaBolt } from 'react-icons/fa';
-import { SiApple } from 'react-icons/si';
+import { SiGoogleplay  } from 'react-icons/si';
 import { BsWallet2 } from 'react-icons/bs';
 
 export default function Hero() {
@@ -45,13 +45,13 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Link to="/signup">
+              {/* <Link to="/signup">
                 <button className="px-6 py-3 bg-primary text-text-color rounded-xl font-semibold flex items-center gap-2 hover:bg-tertiary hover:text-primary transition-all shadow-md hover:shadow-lg">
                   Create Free Account <FaArrowRight className="w-4 h-4" />
                 </button>
-              </Link>
+              </Link> */}
               <button className="px-6 py-3 border-2 border-tertiary rounded-xl font-semibold text-tertiary flex items-center gap-2 hover:bg-tertiary hover:text-primary transition-all">
-                <SiApple className="w-4 h-4" /> Download App
+                <SiGoogleplay  className="w-4 h-4" /> Download App
               </button>
             </div>
 
