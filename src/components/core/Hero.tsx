@@ -36,7 +36,7 @@ export default function Hero() {
 
             <p className="text-lg text-text-color/60 mb-8 leading-relaxed">
               Send, receive and manage your money across borders with zero stress.
-              Multi-currency wallets, instant transfers, and virtual cards — all in one app.
+              Multi-currency wallets, instant transfers, and virtual cards all in one app.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
