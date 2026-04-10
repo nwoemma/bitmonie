@@ -40,7 +40,7 @@ export default function Footer() {
             <h4 className="font-semibold mb-4 text-color">Company</h4>
             <ul className="space-y-2">
               <li><Link to="/about" className="text-color hover:text-white text-sm transition-colors">About us</Link></li>
-              <li><a href="/contact" className="text-color hover:text-white text-sm transition-colors">Contact</a></li>
+              <li><Link to="/contact" className="text-color hover:text-white text-sm transition-colors">Contact</Link></li>
             </ul>
           </div>
 
@@ -48,9 +48,9 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4 text-color">Resources</h4>
             <ul className="space-y-2">
-              <li><a href="/help-center" className="text-color hover:text-white text-sm transition-colors">Help Center</a></li>
-              <li><a href="/privacy-policy" className="text-color hover:text-white text-sm transition-colors">Privacy Policy</a></li>
-              <li><a href="/terms" className="text-color hover:text-white text-sm transition-colors">Terms of Service</a></li>
+              <li><Link to="/help-center" className="text-color hover:text-white text-sm transition-colors">Help Center</Link></li>
+              <li><Link to="/privacy-policy" className="text-color hover:text-white text-sm transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/terms" className="text-color hover:text-white text-sm transition-colors">Terms of Service</Link></li>
             </ul>
           </div>
         </div>
