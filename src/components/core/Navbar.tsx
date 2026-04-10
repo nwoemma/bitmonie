@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { FiArrowRight } from 'react-icons/fi';
-
+import logo from '../../assets/logo.png';
 const navLinks = [
   { label: 'Home', path: '/' },
   { label: 'Features', path: '/features' },
@@ -19,10 +19,13 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
 
         {/* Logo */}
-        <Link to="/" className="text-2xl font-black text-tertiary tracking-tight">
-          Bit<span className="text-primary">monie</span>
+        <Link to="/" className="flex items-center">
+          <img 
+            src={logo}
+            alt="Bitmonie" 
+            className="h-10 w-auto" 
+          />
         </Link>
-
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((item) => (
