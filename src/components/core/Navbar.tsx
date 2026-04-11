@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { FiArrowRight } from 'react-icons/fi';
-import logo from '../../assets/logo.png';
+import logo from "../../assets/logo.png"
+
 const navLinks = [
   { label: 'Home', path: '/' },
   { label: 'Features', path: '/features' },
