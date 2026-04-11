@@ -24,7 +24,7 @@ export default function Navbar() {
           <img 
             src={logo}
             alt="Bitmonie" 
-            className="h-15 w-auto" 
+            className="h-10 w-10" 
           />
         </Link>
         {/* Desktop Links */}
