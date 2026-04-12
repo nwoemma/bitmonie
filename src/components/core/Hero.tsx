@@ -69,6 +69,9 @@ export default function Hero() {
           {/* Dashboard Card */}
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-to-r from-tertiary/20 to-primary/20 rounded-full blur-3xl" />
+              <div className="relative bg-secondary rounded-2xl shadow-xl overflow-hidden px-4 py-1 text-xs flex items-center justify-center animate-pulse">
+                Demo data for illustration purposes
+              </div>
             <div className="relative bg-secondary rounded-2xl shadow-2xl overflow-hidden border border-primary/20">
               <div className="bg-primary px-5 py-3">
                 <span className="text-text-color text-sm font-semibold">Bitmonie Dashboard</span>
