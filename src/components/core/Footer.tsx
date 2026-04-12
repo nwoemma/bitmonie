@@ -15,7 +15,7 @@ export default function Footer() {
               Bit<span className="text-color">monie</span>
             </Link>
             <p className="text-color text-sm mb-4 leading-relaxed">
-              The smarter way to manage money globally. Built for individuals and businesses who need fast, secure, and borderless financial tools.
+              The smarter way to manage money. Built for individuals and businesses who need fast and secure financial tools.
             </p>
             <div className="flex gap-4">
               <FontAwesomeIcon icon={faTwitter} className="w-4 h-4 text-color hover:text-[#00C2FF] cursor-pointer transition-colors" />

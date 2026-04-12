@@ -4,12 +4,30 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShieldAlt, faLock, faFingerprint, faServer, faKey, faBug, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const securityFeatures = [
-  { icon: faShieldAlt, title: 'Smart Contract Audits', description: 'Automated and manual audits of all listed tokens with detailed risk reports.', status: 'Active' },
-  { icon: faLock, title: 'End-to-End Encryption', description: 'All data transmitted is encrypted using AES-256 military-grade encryption.', status: 'Active' },
-  { icon: faFingerprint, title: 'Multi-Factor Authentication', description: 'Optional 2FA support for API keys and sensitive operations.', status: 'Available' },
-  { icon: faServer, title: 'Decentralized Infrastructure', description: 'No single point of failure with distributed node architecture.', status: 'Active' },
-  { icon: faKey, title: 'Non-Custodial', description: 'We never hold your private keys or assets. You remain in full control.', status: 'Active' },
-  { icon: faBug, title: 'Bug Bounty Program', description: '$1,000,000 bounty pool for responsible vulnerability disclosures.', status: 'Live' },
+  {
+    icon: faLock,
+    title: 'Secure Data Encryption',
+    description: 'All user data is encrypted during transmission to protect your information.',
+    status: 'Active'
+  },
+  {
+    icon: faFingerprint,
+    title: 'Two-Factor Authentication',
+    description: 'Add an extra layer of security to your account during login and transactions.',
+    status: 'Available'
+  },
+  {
+    icon: faShieldAlt,
+    title: 'Account Protection',
+    description: 'We monitor activity to help prevent unauthorized access.',
+    status: 'Active'
+  },
+  {
+    icon: faServer,
+    title: 'Reliable Infrastructure',
+    description: 'Our systems are designed for stability and continuous availability.',
+    status: 'Active'
+  }
 ];
 
 export default function Security({ preview = false }: { preview?: boolean }) {

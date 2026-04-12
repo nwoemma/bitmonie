@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faMapMarker, faClock, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 const contactInfo = [
-  { icon: faEnvelope, title: 'Email', details: 'support@bitmonie.com', link: 'mailto:support@bitmonie.com' },
-  { icon: faPhone, title: 'Phone', details: '+234 0 123-4567', link: 'tel:+23401234567' },
-  { icon: faMapMarker, title: 'Office', details: '123 Crypto Street, Silicon Valley, CA 94025', link: '#' },
+  { icon: faEnvelope, title: 'Email', details: '', link: '#' },
+  { icon: faPhone, title: 'Phone', details: '', link: '#' },
+  { icon: faMapMarker, title: 'Office', details: 'Nigeria', link: '#' },
   { icon: faClock, title: 'Support Hours', details: '24/7 Customer Support', link: '#' },
 ];
 

@@ -9,6 +9,11 @@ import About from './components/pages/About';
 import HelpCenter from './components/pages/HelpCenter';
 import PrivacyPolicy from './components/pages/PrivacyPolicy';
 import Terms from './components/pages/Terms'
+import CreateAccountHelp from './components/pages/HelpCenter/CreateAccountsHelp';
+import AddFundsHelp from './components/pages/HelpCenter/AddFundsHelp';
+import TransferHelp from './components/pages/HelpCenter/TransferHelp';
+import SecurityHelp from './components/pages/HelpCenter/Security';
+
 import NotFound from './components/core/NotFound';
 import Contact from "./components/pages/Contact"
 
@@ -40,6 +45,10 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />}/>
         <Route path="/contact" element={<Contact />}/>
         <Route path="/help-center" element={<HelpCenter />}/>
+        <Route path='/help/create-account'element={<CreateAccountHelp />} />
+        <Route path='/help/add-funds' element={<AddFundsHelp />} />
+        <Route path='/help/transfers' element={<TransferHelp />} />
+        <Route path='/help/security' element={<SecurityHelp />} />
         <Route path="/terms" element={<Terms />}/>
       </Routes>
       <Footer />

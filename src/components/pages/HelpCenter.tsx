@@ -13,7 +13,7 @@ const faqCategories = [
 const popularArticles = [
   { title: 'How to create an account', link: '/help/create-account' },
   { title: 'How to add funds to your wallet', link: '/help/add-funds' },
-  { title: 'How to make international transfers', link: '/help/transfers' },
+  { title: 'How to make transfers to another Bitmonie Account', link: '/help/transfers' },
   { title: 'Security best practices', link: '/help/security' },
 ];
 

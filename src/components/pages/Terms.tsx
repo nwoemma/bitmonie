@@ -9,11 +9,11 @@ const termsSections = [
     title: 'Acceptance of Terms',
     content: 'By accessing or using Bitmonie, you agree to be bound by these Terms of Service. If you disagree with any part of the terms, you may not access the service.'
   },
-  {
-    icon: faUserCheck,
-    title: 'Eligibility',
-    content: 'You must be at least 18 years old to use Bitmonie. By using our services, you represent and warrant that you meet this eligibility requirement.'
-  },
+  // {
+  //   icon: faUserCheck,
+  //   title: 'Eligibility',
+  //   content: 'You must be at least 18 years old to use Bitmonie. By using our services, you represent and warrant that you meet this eligibility requirement.'
+  // },
   {
     icon: faHandshake,
     title: 'Account Responsibilities',
@@ -62,10 +62,6 @@ export default function TermsOfService() {
       <div className="max-w-4xl mx-auto">
         
         <div ref={headerRef} className="text-center mb-12 opacity-0">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/20 rounded-full mb-4">
-            <span className="w-2 h-2 bg-tertiary rounded-full animate-pulse" />
-            <span className="text-sm text-tertiary font-semibold">Effective: January 2024</span>
-          </div>
           <h1 className="text-3xl md:text-4xl font-black text-text-color mb-4" style={{ letterSpacing: '-0.5px' }}>
             Terms of Service
           </h1>

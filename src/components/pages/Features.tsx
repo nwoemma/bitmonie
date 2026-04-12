@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWallet, faPaperPlane, faShieldAlt, faCreditCard, faChartLine, faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 const features = [
-  { icon: faWallet, title: 'Multi-currency wallet', description: 'Hold, send and receive money from currencies including NGN and USD. ' },
-  { icon: faPaperPlane, title: 'Instant transfers', description: 'Send money globally in seconds. No delays, no hidden fees. Your recipient gets it instantly, anywhere in the world.' },
-  { icon: faShieldAlt, title: 'Bank-grade security', description: 'Your funds are protected with 256-bit encryption, biometric authentication, and real-time fraud detection.' },
-  { icon: faChartLine, title: 'Spending analytics', description: 'Track your spending habits with beautiful charts and insights. Know exactly where your money goes every month.' },
- { icon: faGlobe, title: 'Growing Nationwide', description: 'Starting strong in Port Harcourt, Abuja and Lagos, with plans to reach every Nigerian no matter where they are.' },
+  { icon: faWallet, title: 'Secure Wallet', description: 'Store and manage your cryptocurrency safely in one place.' },
+  { icon: faPaperPlane, title: 'Fast Transactions', description: 'Send and receive crypto quickly with a smooth and reliable experience.' },
+  { icon: faShieldAlt, title: 'Secure Trading', description: 'Trade with confidence using our protected peer-to-peer (P2P) system.' },
+  { icon: faCreditCard, title: 'Easy Withdrawals', description: 'Withdraw your funds directly to your bank account anytime.' },
+  { icon: faGlobe, title: 'P2P Trading', description: 'Buy and sell crypto directly with other users using local currency.' },
 ];
 
 export default function Features() {

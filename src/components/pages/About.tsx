@@ -50,15 +50,16 @@ export default function About() {
             About Bitmonie
           </h2>
           <p className="text-text-color/70 leading-relaxed">
-            We're on a mission to democratize access to financial tools for everyone, everywhere.
+            We are on a mission to make it easy for Nigerians to buy, sell, and manage cryptocurrency using Naira.
           </p>
         </div>
         {/* Brief Summary of the App */}
         <div className="mb-16 opacity-0 animate-fade-up">
           <div className="bg-secondary/50 border border-primary/20 rounded-2xl p-8 text-center max-w-3xl mx-auto">
             <p className="text-text-color/80 leading-relaxed text-lg">
-              Bitmonie is a new revolutionary financial platform that combines the best of traditional banking with the innovation of decentralized finance.
-              Our multi-currency wallet, virtual cards, and spending analytics give you complete control over your finances.
+              Bitmonie is a secure digital platform that allows users to buy, sell, and manage cryptocurrency with ease. Through our peer-to-peer (P2P) system, users can trade crypto directly with others using local currency.
+              The platform also supports gift card trading, giving users more ways to exchange value. Users can safely store their assets and withdraw funds directly to their bank accounts whenever needed.
+              Our goal is to make digital finance simple, fast, and accessible for everyone.
             </p>
           </div>
         </div>

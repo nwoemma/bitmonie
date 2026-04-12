@@ -6,7 +6,7 @@ const sections = [
   {
     icon: faShieldAlt,
     title: 'Information We Collect',
-    content: 'We collect information you provide directly to us, such as when you create an account, verify your identity, or contact support. This may include your name, email address, phone number, government ID, and transaction data.'
+    content: 'We collect information you provide directly to us, such as when you create an account, verify your identity, or contact support. This may include your name, email address, phone number and transaction data.'
   },
   {
     icon: faLock,
@@ -16,7 +16,7 @@ const sections = [
   {
     icon: faDatabase,
     title: 'Data Storage & Security',
-    content: 'Your data is encrypted using AES-256 military-grade encryption. We store your information on secure servers with strict access controls and regular security audits.'
+    content: 'Your data is encrypted using a powerful grade encryption. We store your information on secure servers with strict access controls and regular security audits.'
   },
   {
     icon: faCookie,
@@ -31,7 +31,7 @@ const sections = [
   {
     icon: faBell,
     title: 'Your Rights',
-    content: 'You have the right to access, correct, delete your data, and object to processing. Contact our Data Protection Officer to exercise these rights.'
+    content: 'You have the right to access, correct, delete your data, and object to processing. Contact our Officers to exercise these rights.'
   }
 ];
 
@@ -61,10 +61,6 @@ export default function PrivacyPolicy() {
       <div className="max-w-4xl mx-auto">
         
         <div ref={headerRef} className="text-center mb-12 opacity-0">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/20 rounded-full mb-4">
-            <span className="w-2 h-2 bg-tertiary rounded-full animate-pulse" />
-            <span className="text-sm text-tertiary font-semibold">Last updated: January 2024</span>
-          </div>
           <h1 className="text-3xl md:text-4xl font-black text-text-color mb-4" style={{ letterSpacing: '-0.5px' }}>
             Privacy Policy
           </h1>
