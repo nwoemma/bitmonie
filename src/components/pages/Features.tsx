@@ -1,7 +1,8 @@
 import { useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWallet, faPaperPlane, faShieldAlt, faCreditCard, faChartLine, faGlobe } from '@fortawesome/free-solid-svg-icons';
-
+import image from "../../assets/image.png";
+import image2 from "../../assets/image2.png";
 const features = [
   { icon: faWallet, title: 'Secure Wallet', description: 'Store and manage your cryptocurrency safely in one place.' },
   { icon: faPaperPlane, title: 'Fast Transactions', description: 'Send and receive crypto quickly with a smooth and reliable experience.' },
@@ -66,8 +67,58 @@ export default function Features() {
             </div>
           ))}
         </div>
+        <div className="overflow-hidden w-full mt-8">
+          <div className="flex flex-row gap-6 w-max animate-[slide-left_15s_linear_infinite] hover:[animation-play-state:paused]">
+            
+            {/* Original + Duplicate for seamless loop */}
+            {[...Array(2)].map((_, i) => (
+              <div key={i} className="flex flex-row gap-6">
+                <div className="relative mt-16 rounded-2xl overflow-hidden perspective-1500">
+                  <img src={image} alt="Bitmonie App" className="w-70 h-80 object-contain rounded-2xl [transform:rotateX(20deg)_rotateY(35deg)_rotateZ(-20deg)] origin-bottom" />
+                  <div className="absolute bottom-6 left-6 z-20">
+                    <div className="bg-white/90 backdrop-blur-sm rounded-xl px-4 py-3 shadow-lg">
+                      <p className="text-sm font-semibold text-[#0A1F44]">Send and receive crypto easily</p>
+                      <p className="text-xs text-[#4A5568]">Move assets across borders in one place</p>
+                    </div>
+                  </div>
+                </div>
 
+                <div className="relative mt-16 rounded-2xl overflow-hidden perspective-1000">
+                  <img src={image} alt="Bitmonie App" className="w-70 h-80 object-contain rounded-2xl [transform:rotateX(0deg)_rotateY(0deg)_rotateZ(0deg)] origin-bottom" />
+                  <div className="absolute bottom-6 left-6 z-20">
+                    <div className="bg-white/90 backdrop-blur-sm rounded-xl px-4 py-3 shadow-lg">
+                      <p className="text-sm font-semibold text-[#0A1F44]">Fast crypto transfers</p>
+                      <p className="text-xs text-[#4A5568]">Send tokens with low delay and high reliability</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="relative mt-16 rounded-2xl overflow-hidden perspective-1500">
+                  <img src={image2} alt="Bitmonie App" className="w-70 h-80 object-contain rounded-2xl [transform:rotateX(20deg)_rotateY(35deg)_rotateZ(-20deg)] origin-bottom" />
+                  <div className="absolute bottom-6 left-6 z-20">
+                    <div className="bg-white/90 backdrop-blur-sm rounded-xl px-4 py-3 shadow-lg">
+                      <p className="text-sm font-semibold text-[#0A1F44]">Secure asset control</p>
+                      <p className="text-xs text-[#4A5568]">You stay in full control of your funds</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="relative mt-16 rounded-2xl overflow-hidden perspective-1500">
+                  <img src={image2} alt="Bitmonie App" className="w-70 h-80 object-contain rounded-2xl [transform:rotateX(0deg)_rotateY(0deg)_rotateZ(0deg)] origin-bottom" />
+                  <div className="absolute bottom-6 left-6 z-20">
+                    <div className="bg-white/90 backdrop-blur-sm rounded-xl px-4 py-3 shadow-lg">
+                      <p className="text-sm font-semibold text-[#0A1F44]">Crypto payments</p>
+                      <p className="text-xs text-[#4A5568]">Pay and transfer digital assets securely</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        
       </div>
+
     </section>
   );
 }

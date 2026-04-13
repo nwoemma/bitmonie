@@ -6,6 +6,7 @@
   --color-primary:   #FFDD29;
   --color-secondary: #F3EFE9;
   --color-tertiary:  #998519;
+  --animate-slide-left: slide-left 15s linear infinite;
   --text-color: #131313
 }
 
@@ -20,7 +21,10 @@
     color: #0A1F44;
   }
 }
-
+@keyframes slide-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 @layer components {
   .btn-primary { /* ... your existing styles */ }
   .card { /* ... your existing styles */ }
