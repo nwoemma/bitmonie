@@ -1,8 +1,12 @@
 import { useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWallet, faPaperPlane, faShieldAlt, faCreditCard, faChartLine, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import {
+  faWallet, faPaperPlane, faShieldAlt, faCreditCard,
+  faBolt, faChartLine, faLock, faEyeSlash, faUsers
+} from '@fortawesome/free-solid-svg-icons';
 import image from "../../assets/image.png";
 import image2 from "../../assets/image2.png";
+
 const features = [
   { icon: faWallet, title: 'Digital Wallet', description: 'Keep your NGN and crypto balances in one secure wallet. Deposit, withdraw and transfer funds anytime. Your money is always accessible and protected' },
   { icon: faPaperPlane, title: 'Bill Payments Made Simple', description: 'Pay electricity bills, buy data bundles, recharge airtime for all major Nigerian networks (MTN, Glo, Airtel, 9mobile), and settle other utility bills. No hidden charges, instant confirmation.' },
@@ -10,9 +14,19 @@ const features = [
   { icon: faCreditCard, title: 'Crypto Trading (Buy & Sell)', description: 'Keep your NGN and crypto balances in one secure wallet. Deposit, withdraw, and transfer funds anytime. Your money is always accessible and protected.' },
 ];
 
+const whyBitmonie = [
+  { icon: faBolt,      title: 'Instant Execution',     description: 'Trades and bill payments complete in seconds.' },
+  { icon: faChartLine, title: 'Competitive Rates',      description: 'Get the best prices for crypto and lowest fees for bills.' },
+  { icon: faLock,      title: 'Escrow Protection',      description: 'Every P2P trade is secured – funds released only when both parties confirm.' },
+  { icon: faEyeSlash,  title: 'No Hidden Charges',      description: 'What you see is what you pay.' },
+  { icon: faUsers,     title: 'Built for Nigerians',    description: 'Local payment methods, 24/7 support, and a simple interface.' },
+];
+
 export default function Features() {
   const headerRef = useRef(null);
+  const whyRef = useRef(null);
   const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const whyCardsRef = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -24,9 +38,9 @@ export default function Features() {
     }, { threshold: 0.1 });
 
     if (headerRef.current) observer.observe(headerRef.current);
-    cardsRef.current.forEach(card => {
-      if (card) observer.observe(card);
-    });
+    if (whyRef.current) observer.observe(whyRef.current);
+    cardsRef.current.forEach(card => { if (card) observer.observe(card); });
+    whyCardsRef.current.forEach(card => { if (card) observer.observe(card); });
 
     return () => observer.disconnect();
   }, []);
@@ -35,6 +49,7 @@ export default function Features() {
     <section id="security" className="pt-32 pb-20 px-6 bg-gradient-to-b from-primary/20 to-secondary overflow-hidden">
       <div className="max-w-6xl mx-auto">
 
+        {/* Header */}
         <div ref={headerRef} className="text-center max-w-2xl mx-auto mb-12 opacity-0">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/20 rounded-full mb-4">
             <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
@@ -48,6 +63,7 @@ export default function Features() {
           </p>
         </div>
 
+        {/* Feature Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <div
@@ -66,10 +82,10 @@ export default function Features() {
             </div>
           ))}
         </div>
+
+        {/* Scrolling Images */}
         <div className="overflow-hidden w-full mt-8">
           <div className="flex flex-row gap-6 w-max animate-[slide-left_15s_linear_infinite] hover:[animation-play-state:paused]">
-            
-            {/* Original + Duplicate for seamless loop */}
             {[...Array(2)].map((_, i) => (
               <div key={i} className="flex flex-row gap-6">
                 <div className="relative mt-16 rounded-2xl overflow-hidden perspective-1500">
@@ -115,9 +131,43 @@ export default function Features() {
             ))}
           </div>
         </div>
-        
-      </div>
 
+        {/* Why Bitmonie */}
+        <div ref={whyRef} className="mt-20 opacity-0">
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/20 rounded-full mb-4">
+              <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+              <span className="text-sm text-tertiary font-semibold">Why choose us</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-black text-[#0A1F44] mb-4" style={{ letterSpacing: '-0.5px' }}>
+              Why Bitmonie?
+            </h2>
+            <p className="text-[#4A5568] leading-relaxed">
+              We built Bitmonie with one goal — to give Nigerians the fastest, fairest, and most secure way to manage money and crypto.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {whyBitmonie.map((item, index) => (
+              <div
+                key={index}
+                ref={el => { whyCardsRef.current[index] = el; }}
+                style={{ animationDelay: `${index * 0.08}s` }}
+                className="opacity-0 flex items-start gap-4 p-5 rounded-2xl border border-primary/20 bg-secondary/50 hover:border-primary hover:bg-primary/10 transition-all group"
+              >
+                <div className="w-10 h-10 bg-primary/20 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary transition-all">
+                  <FontAwesomeIcon icon={item.icon} className="w-4 h-4 text-tertiary group-hover:text-[#0A1F44] transition-colors" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-[#0A1F44] mb-1">{item.title}</h3>
+                  <p className="text-sm text-[#4A5568] leading-relaxed">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+      </div>
     </section>
   );
 }
