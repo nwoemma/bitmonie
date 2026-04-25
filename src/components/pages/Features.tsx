@@ -143,7 +143,7 @@ export default function Features() {
               Why Bitmonie?
             </h2>
             <p className="text-[#4A5568] leading-relaxed">
-              We built Bitmonie with one goal — to give Nigerians the fastest, fairest, and most secure way to manage money and crypto.
+              We built Bitmonie with one goal — to give people across the globe the fastest, fairest, and most secure way to manage money and crypto.
             </p>
           </div>
 

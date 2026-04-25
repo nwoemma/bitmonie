@@ -11,12 +11,12 @@ const values = [
   { icon: faHandshake, title: 'Fair & Transparent',  description: 'No hidden fees. What you see before you confirm is exactly what you pay.' },
 ];
 
-const milestones = [
-  { title: 'Founded',       description: 'Bitmonie is founded in Nigeria with a mission to simplify crypto and money management for Nigerians.' },
-  { title: 'Beta Launch',   description: 'Beta version tested by early users across Abuja and Port Harcourt — refining P2P, wallet, and bill payments.' },
-  { title: 'Public Launch', description: 'Full nationwide launch bringing crypto trading, P2P marketplace, and instant bill payments to all Nigerians.' },
-  { title: 'The Future',    description: 'Expanding to support all 36 states with NGN and USD wallets, and broader crypto asset support.' },
-];
+// const milestones = [
+//   { title: 'Founded',       description: 'Bitmonie is founded in Nigeria with a mission to simplify crypto and money management for Nigerians.' },
+//   { title: 'Beta Launch',   description: 'Beta version tested by early users across Abuja and Port Harcourt — refining P2P, wallet, and bill payments.' },
+//   { title: 'Public Launch', description: 'Full nationwide launch bringing crypto trading, P2P marketplace, and instant bill payments to all Nigerians.' },
+//   { title: 'The Future',    description: 'Expanding to support all 36 states with NGN and USD wallets, and broader crypto asset support.' },
+// ];
 
 export default function About() {
   const headerRef = useRef(null);
@@ -87,7 +87,7 @@ export default function About() {
         </div>
 
         {/* Milestones */}
-        <div className="grid md:grid-cols-4 gap-6">
+        {/* <div className="grid md:grid-cols-4 gap-6">
           {milestones.map((milestone, index) => (
             <div
               key={index}
@@ -102,7 +102,7 @@ export default function About() {
               )}
             </div>
           ))}
-        </div>
+        </div> */}
 
       </div>
     </section>
