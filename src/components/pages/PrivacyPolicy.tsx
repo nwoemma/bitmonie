@@ -10,7 +10,7 @@ const sections = [
   {
     icon: faShieldAlt,
     title: '1. Overview',
-    content: 'Bitmonie ("we", "us", "our") respects your privacy. This Privacy Policy explains how we collect, use, and protect your personal information when you use our App and Services.',
+    content: 'We respects your privacy. This Privacy Policy explains how we collect, use, and protect your personal information when you use our App and Services.',
   },
   {
     icon: faEye,
