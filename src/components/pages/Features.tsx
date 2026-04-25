@@ -4,11 +4,10 @@ import { faWallet, faPaperPlane, faShieldAlt, faCreditCard, faChartLine, faGlobe
 import image from "../../assets/image.png";
 import image2 from "../../assets/image2.png";
 const features = [
-  { icon: faWallet, title: 'Secure Wallet', description: 'Store and manage your cryptocurrency safely in one place.' },
-  { icon: faPaperPlane, title: 'Fast Transactions', description: 'Send and receive crypto quickly with a smooth and reliable experience.' },
-  { icon: faShieldAlt, title: 'Secure Trading', description: 'Trade with confidence using our protected peer-to-peer (P2P) system.' },
-  { icon: faCreditCard, title: 'Easy Withdrawals', description: 'Withdraw your funds directly to your bank account anytime.' },
-  { icon: faGlobe, title: 'P2P Trading', description: 'Buy and sell crypto directly with other users using local currency.' },
+  { icon: faWallet, title: 'Digital Wallet', description: 'Keep your NGN and crypto balances in one secure wallet. Deposit, withdraw and transfer funds anytime. Your money is always accessible and protected' },
+  { icon: faPaperPlane, title: 'Bill Payments Made Simple', description: 'Pay electricity bills, buy data bundles, recharge airtime for all major Nigerian networks (MTN, Glo, Airtel, 9mobile), and settle other utility bills. No hidden charges, instant confirmation.' },
+  { icon: faShieldAlt, title: 'Peer‑to‑Peer (P2P) Marketplace', description: 'Buy and sell crypto directly with other users. Set your own rate, choose your preferred payment method (bank transfer, USSD, etc.), and complete trades with escrow protection. Our P2P system holds the crypto until both parties confirm the transaction – safe, fast, and fair.' },
+  { icon: faCreditCard, title: 'Crypto Trading (Buy & Sell)', description: 'Keep your NGN and crypto balances in one secure wallet. Deposit, withdraw, and transfer funds anytime. Your money is always accessible and protected.' },
 ];
 
 export default function Features() {
@@ -77,8 +76,8 @@ export default function Features() {
                   <img src={image} alt="Bitmonie App" className="w-70 h-80 object-contain rounded-2xl [transform:rotateX(20deg)_rotateY(35deg)_rotateZ(-20deg)] origin-bottom" />
                   <div className="absolute bottom-6 left-6 z-20">
                     <div className="bg-white/90 backdrop-blur-sm rounded-xl px-4 py-3 shadow-lg">
-                      <p className="text-sm font-semibold text-[#0A1F44]">Send and receive crypto easily</p>
-                      <p className="text-xs text-[#4A5568]">Move assets across borders in one place</p>
+                      <p className="text-sm font-semibold text-[#0A1F44]">Crypto Trading (Buy & Sell)</p>
+                      <p className="text-xs text-[#4A5568]">Keep your NGN and crypto balances in one secure wallet. Deposit, withdraw, and transfer funds anytime. Your money is always accessible and protected.</p>
                     </div>
                   </div>
                 </div>
@@ -87,8 +86,8 @@ export default function Features() {
                   <img src={image} alt="Bitmonie App" className="w-70 h-80 object-contain rounded-2xl [transform:rotateX(0deg)_rotateY(0deg)_rotateZ(0deg)] origin-bottom" />
                   <div className="absolute bottom-6 left-6 z-20">
                     <div className="bg-white/90 backdrop-blur-sm rounded-xl px-4 py-3 shadow-lg">
-                      <p className="text-sm font-semibold text-[#0A1F44]">Fast crypto transfers</p>
-                      <p className="text-xs text-[#4A5568]">Send tokens with low delay and high reliability</p>
+                      <p className="text-sm font-semibold text-[#0A1F44]">Bill Payments Made Simple</p>
+                      <p className="text-xs text-[#4A5568]">Pay electricity bills, buy data bundles, recharge airtime for all major Nigerian networks (MTN, Glo, Airtel, 9mobile), and settle other utility bills. No hidden charges, instant confirmation.</p>
                     </div>
                   </div>
                 </div>
@@ -97,8 +96,8 @@ export default function Features() {
                   <img src={image2} alt="Bitmonie App" className="w-70 h-80 object-contain rounded-2xl [transform:rotateX(20deg)_rotateY(35deg)_rotateZ(-20deg)] origin-bottom" />
                   <div className="absolute bottom-6 left-6 z-20">
                     <div className="bg-white/90 backdrop-blur-sm rounded-xl px-4 py-3 shadow-lg">
-                      <p className="text-sm font-semibold text-[#0A1F44]">Secure asset control</p>
-                      <p className="text-xs text-[#4A5568]">You stay in full control of your funds</p>
+                      <p className="text-sm font-semibold text-[#0A1F44]">Peer‑to‑Peer (P2P) Marketplace</p>
+                      <p className="text-xs text-[#4A5568]">Pay electricity bills, buy data bundles, recharge airtime for all major Nigerian networks (MTN, Glo, Airtel, 9mobile), and settle other utility bills. No hidden charges, instant confirmation.</p>
                     </div>
                   </div>
                 </div>
@@ -107,8 +106,8 @@ export default function Features() {
                   <img src={image2} alt="Bitmonie App" className="w-70 h-80 object-contain rounded-2xl [transform:rotateX(0deg)_rotateY(0deg)_rotateZ(0deg)] origin-bottom" />
                   <div className="absolute bottom-6 left-6 z-20">
                     <div className="bg-white/90 backdrop-blur-sm rounded-xl px-4 py-3 shadow-lg">
-                      <p className="text-sm font-semibold text-[#0A1F44]">Crypto payments</p>
-                      <p className="text-xs text-[#4A5568]">Pay and transfer digital assets securely</p>
+                      <p className="text-sm font-semibold text-[#0A1F44]">Digital Wallet</p>
+                      <p className="text-xs text-[#4A5568]">Keep your NGN and crypto balances in one secure wallet. Deposit, withdraw and transfer funds anytime. Your money is always accessible and protected</p>
                     </div>
                   </div>
                 </div>
