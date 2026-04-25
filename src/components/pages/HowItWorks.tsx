@@ -40,7 +40,8 @@ const steps = [
 
 export default function HowItWorks() {
   const headerRef = useRef(null);
-  const stepsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const desktopStepsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const mobileStepsRef = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -52,9 +53,8 @@ export default function HowItWorks() {
     }, { threshold: 0.2 });
 
     if (headerRef.current) observer.observe(headerRef.current);
-    stepsRef.current.forEach(step => {
-      if (step) observer.observe(step);
-    });
+    desktopStepsRef.current.forEach(step => { if (step) observer.observe(step); });
+    mobileStepsRef.current.forEach(step => { if (step) observer.observe(step); });
 
     return () => observer.disconnect();
   }, []);
@@ -77,10 +77,8 @@ export default function HowItWorks() {
         <div className="hidden lg:flex items-start justify-center">
           {steps.map((step, index) => (
             <div key={index} className="flex items-start">
-
-              {/* Step */}
               <div
-                ref={el => { stepsRef.current[index] = el; }}
+                ref={el => { desktopStepsRef.current[index] = el; }}
                 style={{ animationDelay: `${index * 0.1}s` }}
                 className="flex flex-col items-center text-center w-40 opacity-0"
               >
@@ -94,7 +92,6 @@ export default function HowItWorks() {
                 <p className="text-sm text-[#4A5568]">{step.description}</p>
               </div>
 
-              {/* Arrow */}
               {index < steps.length - 1 && (
                 <div className="flex items-center justify-center w-10 pt-5 shrink-0">
                   <FontAwesomeIcon icon={faChevronRight} className="w-4 h-4 text-[#0066CC]/40" />
@@ -109,7 +106,7 @@ export default function HowItWorks() {
           {steps.map((step, index) => (
             <div key={index} className="flex flex-col items-center">
               <div
-                ref={el => { if (!stepsRef.current[index]) stepsRef.current[index] = el; }}
+                ref={el => { mobileStepsRef.current[index] = el; }}
                 style={{ animationDelay: `${index * 0.1}s` }}
                 className="flex flex-col items-center text-center opacity-0"
               >
