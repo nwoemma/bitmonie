@@ -13,9 +13,9 @@ import CreateAccountHelp from './components/pages/HelpCenter/CreateAccountsHelp'
 import AddFundsHelp from './components/pages/HelpCenter/AddFundsHelp';
 import TransferHelp from './components/pages/HelpCenter/TransferHelp';
 import SecurityHelp from './components/pages/HelpCenter/Security';
-import FAQ from './components/pages/faq';
 import NotFound from './components/core/NotFound';
 import Contact from "./components/pages/Contact"
+import FAQ from "./components/pages/FAQ"  
 import TawkTo from './components/pages/TawkTo';
 import Referrals from './components/pages/HelpCenter/Referrals';
 import WithdrawNaira  from './components/pages/HelpCenter/Withdrawnaira';
