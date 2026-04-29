@@ -7,6 +7,9 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import image from "../../assets/image.png";
 import image2 from "../../assets/image2.png";
+import bill_payment from "../../assets/bill-payments.png";
+import buy_sell from "../../assets/buy_sell.png";
+import p2p from "../../assets/p2p.png";
 
 const features = [
   {
@@ -122,7 +125,7 @@ export default function Features() {
             {[...Array(2)].map((_, i) => (
               <div key={i} className="flex flex-row gap-6">
                 <div className="relative mt-16 rounded-2xl overflow-hidden perspective-1500">
-                  <img src={image} alt="Bitmonie App" className="w-70 h-80 object-contain rounded-2xl [transform:rotateX(20deg)_rotateY(35deg)_rotateZ(-20deg)] origin-bottom" />
+                  <img src={buy_sell} alt="Bitmonie App" className="w-70 h-80 object-contain rounded-2xl [transform:rotateX(20deg)_rotateY(35deg)_rotateZ(-20deg)] origin-bottom" />
                   <div className="absolute bottom-6 left-6 z-20">
                     <div className="bg-white/90 backdrop-blur-sm rounded-xl px-4 py-3 shadow-lg">
                       <p className="text-sm font-semibold text-[#0A1F44]">Crypto Trading (Buy & Sell)</p>
@@ -132,7 +135,7 @@ export default function Features() {
                 </div>
 
                 <div className="relative mt-16 rounded-2xl overflow-hidden perspective-1000">
-                  <img src={image} alt="Bitmonie App" className="w-70 h-80 object-contain rounded-2xl [transform:rotateX(0deg)_rotateY(0deg)_rotateZ(0deg)] origin-bottom" />
+                  <img src={bill_payment} alt="Bitmonie App" className="w-70 h-80 object-contain rounded-2xl [transform:rotateX(0deg)_rotateY(0deg)_rotateZ(0deg)] origin-bottom" />
                   <div className="absolute bottom-6 left-6 z-20">
                     <div className="bg-white/90 backdrop-blur-sm rounded-xl px-4 py-3 shadow-lg">
                       <p className="text-sm font-semibold text-[#0A1F44]">Bill Payments Made Simple</p>
@@ -142,7 +145,7 @@ export default function Features() {
                 </div>
 
                 <div className="relative mt-16 rounded-2xl overflow-hidden perspective-1500">
-                  <img src={image2} alt="Bitmonie App" className="w-70 h-80 object-contain rounded-2xl [transform:rotateX(20deg)_rotateY(35deg)_rotateZ(-20deg)] origin-bottom" />
+                  <img src={p2p} alt="Bitmonie App" className="w-70 h-80 object-contain rounded-2xl [transform:rotateX(20deg)_rotateY(35deg)_rotateZ(-20deg)] origin-bottom" />
                   <div className="absolute bottom-6 left-6 z-20">
                     <div className="bg-white/90 backdrop-blur-sm rounded-xl px-4 py-3 shadow-lg">
                       <p className="text-sm font-semibold text-[#0A1F44]">Peer‑to‑Peer (P2P) Marketplace</p>
@@ -152,7 +155,7 @@ export default function Features() {
                 </div>
 
                 <div className="relative mt-16 rounded-2xl overflow-hidden perspective-1500">
-                  <img src={image2} alt="Bitmonie App" className="w-70 h-80 object-contain rounded-2xl [transform:rotateX(0deg)_rotateY(0deg)_rotateZ(0deg)] origin-bottom" />
+                  <img src={image} alt="Bitmonie App" className="w-70 h-80 object-contain rounded-2xl [transform:rotateX(0deg)_rotateY(0deg)_rotateZ(0deg)] origin-bottom" />
                   <div className="absolute bottom-6 left-6 z-20">
                     <div className="bg-white/90 backdrop-blur-sm rounded-xl px-4 py-3 shadow-lg">
                       <p className="text-sm font-semibold text-[#0A1F44]">Digital Wallet</p>
