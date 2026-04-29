@@ -13,9 +13,16 @@ import CreateAccountHelp from './components/pages/HelpCenter/CreateAccountsHelp'
 import AddFundsHelp from './components/pages/HelpCenter/AddFundsHelp';
 import TransferHelp from './components/pages/HelpCenter/TransferHelp';
 import SecurityHelp from './components/pages/HelpCenter/Security';
-
+import FAQ from './components/pages/faq';
 import NotFound from './components/core/NotFound';
 import Contact from "./components/pages/Contact"
+import TawkTo from './components/pages/TawkTo';
+import Referrals from './components/pages/HelpCenter/Referrals';
+import WithdrawNaira  from './components/pages/HelpCenter/Withdrawnaira';
+import Escrow from './components/pages/HelpCenter/Escrow';
+import BuySellUSDT from './components/pages/HelpCenter/Buysellusdt';
+import USDDiscrepancy from './components/pages/HelpCenter/Usddiscrepancy';
+import BillPayments from './components/pages/HelpCenter/Billpayments';
 
 function HomePage() {
   return (
@@ -33,6 +40,7 @@ function App() {
   return (
     <Router>
       <Navbar />
+      <TawkTo />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/features" element={<Features />} />
@@ -49,7 +57,14 @@ function App() {
         <Route path='/help/add-funds' element={<AddFundsHelp />} />
         <Route path='/help/transfers' element={<TransferHelp />} />
         <Route path='/help/security' element={<SecurityHelp />} />
+        <Route path='/faq' element={<FAQ />} />
         <Route path="/terms" element={<Terms />}/>
+        <Route path="/help/withdraw-naira" element={<WithdrawNaira />} />
+        <Route path="/help/referrals" element={<Referrals />} />
+        <Route path="/help/escrow" element={<Escrow />} />
+        <Route path="/help/buy-sell-usdt" element={<BuySellUSDT />} />
+        <Route path="/help/usd-discrepancy" element={<USDDiscrepancy />} />
+        <Route path="/help/bill-payments" element={<BillPayments />} />
       </Routes>
       <Footer />
     </Router>
