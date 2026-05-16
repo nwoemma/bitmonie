@@ -24,6 +24,7 @@ import Escrow from './components/pages/HelpCenter/Escrow';
 import BuySellUSDT from './components/pages/HelpCenter/Buysellusdt';
 import USDDiscrepancy from './components/pages/HelpCenter/Usddiscrepancy';
 import BillPayments from './components/pages/HelpCenter/Billpayments';
+import DeleteAccount from './components/pages/DeleteAccount';
 
 function HomePage() {
   return (
@@ -57,6 +58,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/signin" element={<NotFound />} />
         <Route path="/signup" element={<NotFound />} />
+        <Route path='/delete-account' element={<DeleteAccount/>}/>
         <Route path="*" element={<NotFound />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />}/>
         <Route path="/contact" element={<Contact />}/>
